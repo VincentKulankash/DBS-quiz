@@ -1,0 +1,124 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #ff9933;
+    box-sizing: border-box;
+}
+
+
+.hero{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    
+}
+
+.hero > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.hero > div:hover{
+    flex: 5;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8px;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.quizlogo{
+    position: absolute;
+    top: 40vh;
+    left: 45vh;
+    
+}
+
+button{
+    background: #ff9933;
+    border-radius: 50px;
+    height: 40px;
+    width: 180px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 2px;
+    position: relative;
+    margin-top: 2.5rem;
+    transition: 1.5s;
+    margin-left: 9.5rem;
+
+}
+
+button:hover{
+
+    box-shadow: 0 5px 50px 0 #ff9933 inset, 0 5px 50px 0 #ff9933,
+                0 5px 50px 0 #ff9933 inset, 0 5px 50px 0 #ff9933;
+ 
+}
+
+.quiz-container{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 150vh;
+    left: 70vh;
+
+}
+
+.quiz-header{
+    padding: 4rem;
+    color: #ff9933;
+}
+.quiz-header h2{
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+.quiz-header ul{
+    list-style: none;
+}
+
+.quiz-header ul li{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.quiz-header ul li label{
+    cursor: pointer;
+}
